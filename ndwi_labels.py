@@ -25,7 +25,6 @@ from utils.spatial_analysis import log_spatial_info
 from utils.shapefile_generator import coastline_shp_from_raster, save_and_process, save_concatenated_ndwi_with_shapefile
 
 
-
 # Gaussian blur parameters
 KSIZE_BLUR = (9, 9)  # Kernel size (must be positive and odd)
 SIGMA_X = 6      # Standard deviation in X direction
