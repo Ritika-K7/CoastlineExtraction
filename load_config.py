@@ -69,6 +69,12 @@ def get_georeference_output_folder(config):
     """Get the full path to the georeference output folder."""
     return os.path.join(os.path.dirname(__file__), config['georeference_output_folder'])
 
+def get_tile_images_output_folder(config):
+    """Get the full path to the tile images output folder."""
+    return os.path.join(os.path.dirname(__file__), config['tile_images_output_folder'])
+
+
+
 # Example:
 if __name__ == "__main__":
     config = load_config()
