@@ -26,7 +26,7 @@ Outputs:
 
 import os
 import shutil
-from arosics import COREG
+# from arosics import COREG
 import glob
 import rasterio
 import sys

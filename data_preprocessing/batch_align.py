@@ -2,7 +2,7 @@
 Batch Alignment Script for Satellite Imagery
 
 This script batch-aligns all satellite images in the `raw_data/` directory to match a reference
-coastline raster (9-5-2016_Ortho_4Band_NDWI.tif) using GDAL warp.
+coastline raster (9-5-2016_Ortho_4Band_NDWI_3.125m.tif) using GDAL warp.
 
 Aligned images are saved to `processed_data/results_batch_align/` with a '_aligned.tif' suffix.
 

@@ -46,4 +46,3 @@ AROSICS is working!
 - Avoid using pip to install GDAL or AROSICS (may cause conflicts).
 - Keep the environment isolated for geospatial work.
 
-===============================

@@ -60,4 +60,3 @@ gdalwarp -t_srs EPSG:32603 -tr 3.125 3.125 -r bilinear input.tif output_aligned.
   (e.g., land/water classification).
 - Use bilinear/cubic for imagery where smooth transitions are acceptable.
 
-===============================
