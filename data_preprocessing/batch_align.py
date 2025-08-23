@@ -36,7 +36,7 @@ config = load_config()
 raw_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), config['raw_data_folder'])
 
 # The base image path (9-5-2016_Ortho_4Band_NDWI_3.125m.tif)
-base_img = get_ground_truth_path(config, 4)  # Index 4 for 9-5-2016_Ortho_4Band_NDWI.tif
+base_img = get_ground_truth_path(config, 4) # Index 4 for 9-5-2016_Ortho_4Band_NDWI.tif
 
 # Output directory
 aligned_data_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), config['processed_data_folder'], 'results_batch_align')
