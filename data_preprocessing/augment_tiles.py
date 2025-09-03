@@ -6,21 +6,6 @@ This module provides data augmentation functionality for image tiles.
 It creates rotated (90°, 180°, 270°) and flipped versions of input tiles,
 resulting in 7 augmented tiles for every input tile (8 total including original).
 
-Main Features:
-- Creates 7 augmented versions per input tile (rotations and flips)
-- Supports multiband images
-- Configurable maximum tile processing limit
-- Automatic filtering of already augmented files
-
-Input Files:
-- Image tiles from results_tile_images/ folder (*.tif files)
-- Each input tile should be a GeoTIFF with multiple bands
-
-Output Files:
-- Augmented tiles saved in results_augment_tiles/ folder
-- Naming convention: original_name_rot90.tif, original_name_flip.tif, etc.
-- 7 augmented versions per input tile (rot90, rot180, rot270, flip, flip_rot90, flip_rot180, flip_rot270)
-
 Functions:
     - augment_tiles(tile_path, output_path, max_tiles=40): Creates augmented versions of tiles
     - _augment_and_write(bands, output_path, meta, rotation_angle): Helper function for rotation

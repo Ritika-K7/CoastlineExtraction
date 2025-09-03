@@ -10,7 +10,7 @@ Main Features:
 - Automatically saves the output to a results folder
 
 Inputs:
-- Base Image: 9-5-2016_Ortho_4Band_NDWI_3.125m.tif (well-aligned reference image)
+- Base Image: A well-aligned reference image (e.g., ground truth coastline)
 - Target Images: Satellite images to be aligned (from aligned_data/)
 
 Outputs:
