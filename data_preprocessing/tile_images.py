@@ -1,3 +1,25 @@
+"""
+Tile Images Script
+
+This script splits large satellite images into smaller tiles for processing and analysis.
+It is useful for handling large images that may be too memory-intensive to process as a whole.
+
+Main Features:
+- Splits images into configurable tile sizes (default: 512x512 pixels)
+- Uses overlapping tiles (50% overlap) to ensure complete coverage
+- Supports multiband images
+- Optional filtering of tiles with no-data values
+- Parallel processing for improved performance
+
+Inputs:
+- Georeferenced images from results_georeference/ folder
+- Configurable tile dimensions (height and width)
+
+Outputs:
+- Tiled images saved in results_tile_images/ folder
+- Each tile is named with format: original_name_XX-of-YY.tif
+"""
+
 import rasterio as rio
 from rasterio import windows
 
